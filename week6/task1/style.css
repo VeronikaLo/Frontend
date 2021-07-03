@@ -1,0 +1,142 @@
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 20vw;
+    grid-template-rows: 10% 15% 1fr 5% 1rf 10%;
+    grid-template-areas:
+        "header header  header"
+        "intro intro aside"
+        "content1 content2  aside"
+        "content3 content3 aside"
+        "content4 content4 aside"
+        "footer footer footer";
+    font-size: 16px;
+    background-color: bisque;
+}
+
+h1,
+h2,
+h3,
+.aside p {
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: endcenter;
+
+}
+
+.logo img {
+    width: 70px;
+    margin: 15px;
+    border-radius: 30%;
+}
+
+.menu_item {
+    justify-self: end;
+}
+
+.menu_item a {
+    margin: 0px 3vw 0px 3vw;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: cornsilk;
+}
+
+.intro {
+    grid-area: intro;
+    padding: 15px;
+}
+
+.content1 {
+    grid-area: content1;
+    padding: 15px;
+}
+
+.content1 img {
+    max-width: 95%;
+    border: 5px solid cadetblue;
+    border-radius: 20px;
+    margin: 10p
+}
+
+.content2 {
+    grid-area: content2;
+    align-self: center;
+    padding: 15px;
+}
+
+.list {
+    max-width: 95%;
+    font-size: 20px;
+    line-height: 3em;
+    margin: 10px;
+}
+
+.content3 {
+    grid-area: content3;
+}
+
+.content4 {
+    grid-area: content4;
+    justify-self: center;
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    justify-content: center;
+    border: 5px solid cadetblue;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.down_item {
+    justify-content: center;
+    min-height: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: cadetblue;
+
+
+}
+
+.aside {
+    grid-area: aside;
+    justify-self: center;
+}
+
+.aside img {
+    width: 15vw;
+}
+
+footer {
+    grid-area: footer;
+    background-color: cadetblue;
+    margin-top: 3vh;
+    font-display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+.footer_item a {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-decoration: none;
+    font-size: large;
+    color: cornsilk;
+}
+
+.address {
+    margin-left: 3vw;
+    line-height: 0.5em;
+    color: cornsilk
+}
