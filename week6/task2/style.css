@@ -25,6 +25,7 @@
 .header_items a {
     text-decoration: none;
     color: black;
+    transition: background-color 0.3s ease 0s;
 }
 
 .link {
