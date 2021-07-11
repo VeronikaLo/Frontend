@@ -25,15 +25,14 @@ h3,
     grid-area: header;
     background-color: cadetblue;
     display: grid;
-    grid-template-columns: 4vw 1fr;
+    grid-template-columns: 6vw 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
 }
 
 .logo img {
-    max-width:70px;
-    margin:15px;
+    width: 4vw;
     border-radius: 30%;
 }
 
@@ -68,13 +67,13 @@ h3,
 .content2 {
     grid-area: content2;
     align-self: center;
-    padding: 15px;
+    padding: 1vw;
 }
 
 .list {
     max-width: 95%;
     font-size: 20px;
-    line-height: 3em;
+    line-height: 2em;
     margin: 10px;
 }
 
