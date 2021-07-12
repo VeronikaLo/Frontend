@@ -230,10 +230,7 @@ h1 {
         max-height: 7vh;
         margin: 0;
     }
-    .link img{
-        text-align: center;
-    }
-
+    
     .list {
         display: flex;
         justify-content: space-evenly;
