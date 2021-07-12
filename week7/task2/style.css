@@ -221,14 +221,16 @@ h1 {
        
     .link {
         display: block;
-        max-height: 7vh;
-        margin: 0;   
+        height: 7vh;
+        margin: 0;  
+        text-align: center; 
     }
     .extra {
         
         display: block;
-        max-height: 7vh;
+        height: 7vh;
         margin: 0;
+        text-align: center;
     }
     
     .list {
