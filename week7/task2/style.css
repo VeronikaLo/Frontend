@@ -214,15 +214,24 @@ h1 {
 
     .header_items {
         display: flex;
-        flex-direction: column; 
-        align-items: center;  
-    }
+        flex-direction: column;
+        text-align: center;   
+     }
+    
        
     .link {
-        margin: 5%;
+        display: block;
+        max-height: 7vh;
+        margin: 0;   
     }
     .extra {
-        margin: 5%;
+        
+        display: block;
+        max-height: 7vh;
+        margin: 0;
+    }
+    .link img{
+        text-align: center;
     }
 
     .list {
