@@ -216,23 +216,31 @@ h1 {
         display: flex;
         flex-direction: column;
         text-align: center;   
-     }
+    }
     
-       
     .link {
+        padding-top: 5%;
         display: block;
-        height: 7vh;
+        height: 6vh;
         margin: 0;  
         text-align: center; 
     }
     .extra {
-        
+        padding-top:5%;
         display: block;
-        height: 7vh;
+        height: 6vh;
         margin: 0;
         text-align: center;
     }
     
+    .aside{
+        margin-bottom: 15vh;
+}
+
+    .logo {
+        margin-top: 5vh;
+    }
+
     .list {
         display: flex;
         justify-content: space-evenly;
