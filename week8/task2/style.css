@@ -1,0 +1,116 @@
+
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    max-width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-items: center ;
+    align-items:center;
+    text-transform: uppercase;
+}
+.header_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.header_logo img{
+    max-height: 25px;
+}
+
+
+.header_btn {
+    min-height:40px;
+    min-width: 115px;
+    text-transform: uppercase;
+    background-color:#5222D0 ;
+    color:white;
+    border-radius: 20px;
+    
+}
+
+.main{
+    max-width: 100%;
+    display: flex;
+    align-items:center;
+}
+.content_text{
+    margin: 15% 0 5% 0;
+}
+
+.content_btn{
+    min-height:85px;
+    min-width: 250px;
+    text-transform: uppercase;
+    background-color:#5222D0 ;
+    color:white;
+    border-radius: 50px; 
+    font-weight: bold;
+    font-size: larger;
+}
+
+.footer_nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+.link{
+    min-width: 12%;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+.card-gallery{
+    display: flex;
+   justify-content: space-between;
+
+    flex-wrap: wrap;
+    max-width: 100%;
+   
+}
+
+.card{
+    max-width: 260px;
+    margin: 2% 0 ;
+    padding: 2%
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.form{
+    min-width: 200px;
+    max-height: 150px;
+    margin: 2% ;
+    padding: 2%;
+    background-color:#EC615B;
+    color: white;
+}
+
+.form_input{
+    min-height:30px;
+    margin:1% ;
+}
+
+.form_btn{
+    min-height:40px;
+    min-width: 115px;
+    text-transform: uppercase;
+    background-color:#5222D0 ;
+    color:white;
+    border-radius: 20px;
+}
+
+
+
+
+
