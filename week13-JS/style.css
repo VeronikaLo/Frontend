@@ -1,8 +1,24 @@
+.container{
+    width: 500px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+
 .btn{
     width:200px;
     height: 70px;
     background-color: yellow;
     text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
     border-radius: 30px;
     border:none;
     margin: 10px;
