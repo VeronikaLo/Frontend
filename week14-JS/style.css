@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(238, 238, 125);
+}
+
+h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+}
+
+.item{
+    display:flex;
+    justify-content: center;
+    margin:15px 0;
+}
+
+input{
+    height: 30px;
+    margin: 0 5px;
+}
+
+p{
+    min-width: 50px;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.btn{
+    width:50px;
+    background-color:pink ;
+    font-weight: 600;
+    border:pink;
+}
+
+/* Task 2*/
+
+.parent{
+    display:flex;
+    justify-content: center;
+}
+
+.child{
+    width:200px;
+    height: 150px;
+    background-color: palegreen;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: rgb(189, 101, 116) ;
+    border:none;
+}
+
+/*Task 3*/
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+.img{
+    width: 700px;
+}
+
+.cta{
+    width: 80px;
+    background-color: pink;
+    border:pink;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    cursor: pointer;
+}

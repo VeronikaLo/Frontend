@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week14</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Task1-->
+
+    <h2>Calculator</h2>
+
+    <div class="item">
+      <input type="text" id="number1" />
+      <button class="btn">+</button>
+      <input type="text" id="number2" />
+      <button onclick="add()" class="btn">=</button>
+      <input id="result1" />
+    </div>
+
+    <div class="item">
+      <input type="text" id="number3" />
+      <button class="btn">-</button>
+      <input type="text" id="number4" />
+      <button onclick="minus()" class="btn">=</button>
+      <input id="result2" />
+    </div>
+
+    <div class="item">
+      <input type="text" id="number5" />
+      <button class="btn">*</button>
+      <input type="text" id="number6" />
+      <button onclick="multiply()" class="btn">=</button>
+      <input id="result3" />
+    </div>
+
+    <div class="item">
+      <input type="text" id="number7" />
+      <button class="btn">/</button>
+      <input type="text" id="number8" />
+      <button onclick="divide()" class="btn">=</button>
+      <input id="result4" />
+    </div>
+
+    <br />
+    <br />
+
+    <h2>Task 2</h2>
+
+    <div class="parent">
+      <div class="child" onclick="magic(this)">I love JS</div>
+      <div class="child" onclick="magic(this)">I hate JS</div>
+      <div class="child" onclick="magic(this)">I love JS</div>
+      <div class="child" onclick="magic(this)">I hate JS</div>
+    </div>
+
+    <br />
+    <br />
+
+    <h2>Task 3</h2>
+
+    <div class="container">
+      <button id="back" class="cta" onclick="goBack()">Back</button>
+      <img class="img" src="assets/cat1.jpg" alt="" />
+      <button id="next" class="cta" onclick="goNext()">Next</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
