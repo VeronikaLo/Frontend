@@ -48,6 +48,14 @@ function magic(sender){
 const back = document.querySelector(`#back`);
 const next = document.querySelector(`#next`);
 
+function goBack(){
+    document.querySelector(`.img`).src = "assets/cat2.jpg";
+}
+
+function goNext(){
+    document.querySelector(`.img`).src = "assets/cat3.jpg";
+}
+
 
 
 
