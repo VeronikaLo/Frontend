@@ -66,6 +66,13 @@ input{
     color:crimson;
     text-align: center;
     margin:20px 0;
+}
+
+#welcome{
+    width: 400px;
+    font-size: 30px;
+    color:rgb(7, 173, 82);
+    text-align: center;
 
 }
 

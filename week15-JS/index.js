@@ -97,7 +97,7 @@ buttonForm.addEventListener(`click`, function(){
     }
 
     else{
-        document.querySelector(`#errorForm`).innerText += `Welcome to our community, ${nameInput.value} !`;
+        document.querySelector(`#welcome`).innerText += `Welcome to our community, ${nameInput.value} !`;
     }
 
 })

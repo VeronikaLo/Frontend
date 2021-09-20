@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,47 +8,50 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!--Task1-->
 
     <h2>Calculator</h2>
 
     <div class="item">
-        <input type="text" id="number1" />
-        <button class="btn">+</button>
-        <input type="text" id="number2" />
-        <button onclick="add()" class="btn">=</button>
-        <input id="result1" />
+      <input type="text" id="number1" />
+      <button class="btn">+</button>
+      <input type="text" id="number2" />
+      <button onclick="add()" class="btn">=</button>
+      <input id="result1" />
     </div>
 
     <div class="item">
-        <input type="text" id="number3" />
-        <button class="btn">-</button>
-        <input type="text" id="number4" />
-        <button onclick="minus()" class="btn">=</button>
-        <input id="result2" />
+      <input type="text" id="number3" />
+      <button class="btn">-</button>
+      <input type="text" id="number4" />
+      <button onclick="minus()" class="btn">=</button>
+      <input id="result2" />
     </div>
 
     <div class="item">
-        <input type="text" id="number5" />
-        <button class="btn">*</button>
-        <input type="text" id="number6" />
-        <button onclick="multiply()" class="btn">=</button>
-        <input id="result3" />
+      <input type="text" id="number5" />
+      <button class="btn">*</button>
+      <input type="text" id="number6" />
+      <button onclick="multiply()" class="btn">=</button>
+      <input id="result3" />
     </div>
 
     <div class="item">
-        <input type="text" id="number7" />
-        <button class="btn">/</button>
-        <input type="text" id="number8" />
-        <button onclick="divide()" class="btn">=</button>
-        <input id="result4" />
+      <input type="text" id="number7" />
+      <button class="btn">/</button>
+      <input type="text" id="number8" />
+      <button onclick="divide()" class="btn">=</button>
+      <input id="result4" />
     </div>
     <div class="item">
-        <p id="error"></p>
+      <p id="error"></p>
     </div>
 
     <br />
@@ -57,29 +59,35 @@
 
     <h2>Task 2</h2>
     <form class="form" action="#">
-        <label for="name">Your First Name<br />
-            <input class="input" type="text" id="name" />
-        </label>
-        <label for="surname">Your Last Name<br />
-            <input class="input" type="text" id="surname" />
-        </label>
-        <label for="username">Choose your Username<br />
-            <input class="input" type="text" id="username" />
-        </label>
-        <label for="email">
-            Email<br />
-            <input class="input" type="email" id="email" />
-        </label>
-        <label for="telephone">Telephone<br />
-            <input class="input" type="tel" id="telephone" />
-        </label>
-        <label for="password">Create a password<br />
-            <input class="input" type="password" id="password" />
-        </label>
+      <label for="name"
+        >Your First Name<br />
+        <input class="input" type="text" id="name" />
+      </label>
+      <label for="surname"
+        >Your Last Name<br />
+        <input class="input" type="text" id="surname" />
+      </label>
+      <label for="username"
+        >Choose your Username<br />
+        <input class="input" type="text" id="username" />
+      </label>
+      <label for="email">
+        Email<br />
+        <input class="input" type="email" id="email" />
+      </label>
+      <label for="telephone"
+        >Telephone<br />
+        <input class="input" type="tel" id="telephone" />
+      </label>
+      <label for="password"
+        >Create a password<br />
+        <input class="input" type="password" id="password" />
+      </label>
 
-        <div id="errorForm"></div>
+      <div id="errorForm"></div>
+      <div id="welcome"></div>
 
-        <button id="cta" onclick="check()">Register</button>
+      <button id="cta" onclick="check()">Register</button>
     </form>
     <br />
     <br />
@@ -87,17 +95,17 @@
     <h2>Task 3</h2>
 
     <div class="item">
-        <label class="label" for="choice">Choose your background-color:
-            <select name="choice" id="choice">
-                <option>White</option>
-                <option>Dark</option>
-                <option>Light blue</option>
-                <option>Yellow</option>
-            </select>
-        </label>
+      <label class="label" for="choice"
+        >Choose your background-color:
+        <select name="choice" id="choice">
+          <option>White</option>
+          <option>Dark</option>
+          <option>Light blue</option>
+          <option>Yellow</option>
+        </select>
+      </label>
     </div>
 
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
