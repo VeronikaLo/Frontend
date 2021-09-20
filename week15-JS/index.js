@@ -62,6 +62,7 @@ buttonForm.addEventListener(`click`, function(){
     document.querySelector(`#errorForm`).innerText ="";
     document.querySelector(`#welcome`).innerText ="";
 
+
     if(nameInput.value ==""){
         document.querySelector(`#errorForm`).innerText += "Please, enter your name !";
         
@@ -101,12 +102,15 @@ buttonForm.addEventListener(`click`, function(){
         document.querySelector(`#welcome`).innerText += `Welcome to our community, ${nameInput.value} !`;
     }
 
+
+
 })
+
 
 /*Task 3*/
 let select = document.querySelector(`#choice`);
 
-select.addEventListener(`click`, function(){
+select.addEventListener(`change`, function(){
 
     if (select.value ===`White`){
         document.body.style.backgroundColor = "#fff";
