@@ -60,6 +60,7 @@ buttonForm.addEventListener(`click`, function(){
     
     
     document.querySelector(`#errorForm`).innerText ="";
+    document.querySelector(`#welcome`).innerText ="";
 
     if(nameInput.value ==""){
         document.querySelector(`#errorForm`).innerText += "Please, enter your name !";
