@@ -8,7 +8,7 @@ let arr = ["a", "b"];
   alert(arr[2])  ;
 
 */  
-
+//Task 1
 function sumInput (){
 
   let numbers =[];
@@ -42,28 +42,7 @@ function sumInput (){
 sumInput();
 
 
-/*
-function sumInput() {
-    let numbers = [];
-    while (true) {
-      let value = prompt("Введите число");
-      if (value === "" || value === null || !isFinite(value)) 
-      break;
-      numbers.push(+value);
-    }
-
-    let sum = 0;
-    for (let number of numbers) {
-      sum += number;
-    }
-
-    numbers.sort(function(a, b){return a-b});
-    alert (numbers);
-    return sum;
-  }
-  alert( sumInput() );
-*/
-    
+//Task 2
 
     
 
