@@ -5,8 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+    <div class="wrapper">
+      <div class="heading">
+      <h1>So viel ist Ihr Auto wert</h1>
+    </div>
+      <form class="form" action="#">
+  
+        <div class="form__item">
+        <p>Marke</p>
+        <label for="marke">
+<select name="marke" id="marke" class="extra">
+  <option value="0">Bitte wählen</option>
+  <option value="13000">Audi</option>
+  <option value="17000">Mercedes-Benz</option>
+  <option value="10000">Volkswagen</option>
+  <option value= "11000">Toyota</option>
+  <option value="15000">BMW</option>
+</select>
+        </label>
+        </div>
+
+        <br>
+
+        <div class="form__item">
+          <p>Modell/ Typ</p>
+        <label for="modell">
+          <select name="modell" id="modell"  class="extra"></select>
+        </label>
+        </div>
+
+        <br>
+
+        <div class="form__item">
+          <p>Karosserieform</p>
+          <label for="model">
+            <select  id="" class="extra">
+              <option  name="karosserie" value="0">Bitte wählen</option>
+              <option name="karosserie" value="500">Kleinwagen</option>
+              <option name="karosserie" value="600">Limousine</option>
+              <option name="karosserie" value="700">Kombi</option>
+              <option name="karosserie" value="800">Cabrio</option>
+              <option name="karosserie" value="900">Coupe</option>
+              <option name="karosserie" value="1000">SUV/ Geländewagen</option>
+              <option name="karosserie" value="1000">Van/ Kleinbus</option>
+              <option name="karosserie" value="1200">Transporter</option>
+            </select>
+          </label>
+          </div>
+  
+        <br/>
+
+
+        <div class="form__item">
+        <p>Erstzulassung</p>
+
+        <label for="new">
+        <input type="radio" name="zulassung" value="20000" />0-3 Jahre
+        </label>
+        <br />
+        <label for="new1">
+        <input type="radio" name="zulassung"  value="15000" />3-6 Jahre
+        </label>
+        <br />
+        <label for="neutral">
+        <input type="radio" name="zulassung"  value="7000" />6-10 Jahre
+        </label>
+        <br />
+        <label for="neutral1">
+        <input type="radio" name="zulassung"  value="3000" />über 10Jahre
+        </label>
+        </div>
+        <br>
+
+        <div class="form__item">
+          <p>Kraftstoff</p>
+          <label for="benzin"> 
+          <input type="radio" name="kraft" id="benzin" value="4000" />Benzin
+          </label>
+          <br />
+          <label for="diesel">  
+            <input type="radio" name="kraft" id="diesel" value="7000" />Diesel
+          </label>
+        </div>
+
+        <br>
+
+        <div class="form__item">
+          <p>Getriebe</p>
+          
+          <label for="automat"> 
+          <input type="radio" name="getriebe" id="automat" value="3000" />Automatik
+          </label>
+          <br />
+          <label for="schalt">  
+            <input type="radio" name="getriebe" id="schalt" value="5000" />Schaltgetriebe
+          </label>
+        </div>
+
+        <div class="total">
+          <p>Sie bekommen:</p>
+          <input class="extra big" type="text" id="total">
+        </div>
+
+        <div >
+          <button class="btn" type ="button" id="button">Ausrechnen</button>
+        </div>
+
+      </form>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
