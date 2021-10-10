@@ -13,8 +13,6 @@ function transform(){
 
     console.log(array);
     
-     
- 
     let array1 = array[0];
     array1 = array1[0].toUpperCase() + array1.slice(1);
     let array2 = array[1];
@@ -30,20 +28,17 @@ function transform(){
         console.log (item);
     }
 */
-    console.log (array[0]);
-    console.log (array[1]);
-    console.log (array[2]);
-
     
     let familyName = document.querySelector(`#familyName`);
     familyName.value = array1;
-    console.log (familyName);
 
     let name1 = document.querySelector(`#name1`);
     name1.value = array2;
 
     let surname = document.querySelector(`#surname`);
     surname.value = array3;
+    
+    document.querySelector(`#input1`).value ="";
     
 }
 
@@ -58,7 +53,7 @@ button2.addEventListener(`click`, checkSpam);
 function checkSpam(){
     
    let value = text.value;
-
+   
    if (reg.test(value)){
        console.log('Hurra!')
        let a = value.replace(/viagra|XXX/gim ,"*****");
@@ -66,9 +61,9 @@ function checkSpam(){
        output.textContent += a;
    }
    else{
-    output.textContent = value;
+    output.textContent += value;
    }
- 
+  text.value = "";    
 }
 
 
@@ -76,13 +71,16 @@ function checkSpam(){
 
 /*
 let date = prompt('set the date');
+
+console.log (date);
 alert (formatDate(date));
 
 
 function formatDate(date) {
-    let now = new Date;
+    let now = new Date();
     let diff = (now - date);
-    //let day = date.getDate();
+    console.log(diff);
+    let day = date.getDate();
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
     let hours = date.getHours();
@@ -105,8 +103,8 @@ function formatDate(date) {
     
     }
 
-*/
 
+*/
 
 
 /*Task 4*/
