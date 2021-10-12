@@ -118,12 +118,12 @@ function saveLocalStorage(){
 }
 
 
-function readLocalstorage(){
+function readLocalStorage(){
     let userName = localStorage.getItem(`username`);
     document.querySelector(`#logIn`).value = userName;
 }
 
-readLocalstorage();
+readLocalStorage();
 
 
 function saveComments(){
@@ -137,6 +137,14 @@ function saveComments(){
 
 button3.addEventListener(`click`, saveComments );
 
+
+function readCommentsLocalStorage(){
+    let comments = localStorage.getItem(`comments`);
+    document.querySelector(`#output`).innerHTML = comments;
+}
+
+
+readCommentsLocalStorage();
 
 
 
