@@ -102,3 +102,47 @@ buttonForm.addEventListener(`click`, checkAll);
 
 //Task 3
 
+let text = document.querySelector(`#text`);
+let output = document.querySelector(`#output`);
+let button3 = document.querySelector('#button3')
+
+
+document.querySelector('#task3').addEventListener(`submit`, (evt) =>{
+    evt.preventDefault();
+    saveLocalStorage(); 
+})
+
+function saveLocalStorage(){
+    let nameValue = document.querySelector(`#logIn`).value;
+    localStorage.setItem('username', nameValue);
+}
+
+
+function readLocalstorage(){
+    let userName = localStorage.getItem(`username`);
+    document.querySelector(`#logIn`).value = userName;
+}
+
+readLocalstorage();
+
+
+function saveComments(){
+    let textValue = document.querySelector(`#text`).value;
+    output.innerHTML+= '<br> ' + textValue;
+    text.value ='';
+    text.focus();
+
+    localStorage.setItem('comments', document.querySelector(`#output`).innerHTML);
+}
+
+button3.addEventListener(`click`, saveComments );
+
+
+
+
+
+
+
+
+
+
