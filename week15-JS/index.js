@@ -93,18 +93,23 @@ buttonForm.addEventListener(`click`, function(){
         
     }
 
-    if(password.value.length <6){
+    if( password.value.length <6 && password.value >1){
         document.querySelector(`#errorForm`).innerText += "Your password is insecure! It must contain at least 6 characters !";
         
     }
 
-    else{
+    if (document.querySelector(`#errorForm`).innerText =""){
         document.querySelector(`#welcome`).innerText += `Welcome to our community, ${nameInput.value} !`;
     }
 
-
-
+    console.log (document.querySelector(`#errorForm`).innerText);
+    //if (document.querySelector(`#errorForm`).innerText =""){
+    //    document.querySelector(`#welcome`).innerText = `Welcome to our community, ${nameInput.value} !`;
+    //}
+    
 })
+
+
 
 
 /*Task 3*/
