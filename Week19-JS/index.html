@@ -9,7 +9,7 @@
   </head>
   <body>
     <form action="#" method="post" enctype="multipart/form-data" id="form1">
-      <h2>Task 1</h2>
+      <h2>Task 2</h2>
       <h2>Расскажите нам о Вашем питомце</h2>
 
             
@@ -38,7 +38,7 @@
             class="inputheight"
             type="text"
             name="name"
-            id="name1"
+            id="name"
             placeholder="Ваши имя и фамилия"
             required
           />*         
@@ -49,7 +49,7 @@
           <input
             type="tel"
             name="tel"
-            id="tel1"
+            id="tel"
             class="inputheight"
             placeholder="Телефон"
             required
@@ -61,7 +61,7 @@
           <input
             type="email"
             name="email"
-            id="email1"
+            id="email"
             class="inputheight"
             placeholder="Email"
             required
@@ -183,6 +183,33 @@
         <button class="btn" id="button_one">Сохранить</button>
       </div>
           
+    </form>
+
+    <form class="task3">
+      <h2>Task 3</h2>
+      <div class="inputs">
+        <input
+          type="text"
+          class="inputheight"
+          id="num1"
+          placeholder="Your first number"
+        />
+        <input
+          type="text"
+          class="inputheight"
+          id="num2"
+          placeholder="Your second number"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn_calc" type="button" id="plus">+</button>
+        <button class="btn_calc" type="button" id="min">-</button>
+        <button class="btn_calc" type="button" id="mult">*</button>
+        <button class="btn_calc" type="button" id="div">/</button>
+      </div>
+      <div>
+        <input type="text" class="inputheight" id="results" />
+      </div>
     </form>
 
     <script src="index.js"></script>

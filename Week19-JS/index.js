@@ -1,26 +1,4 @@
-class User {
-    constructor(name, surname){
-       this.name =name;
-       this.surname = surname;}
 
- get fullName() {
-   return `${this.name} ${this.surname}`;
- }
-
- set fullName(value) {
-   [this.name, this.surname] = value.split(" ");
- }
-}
-
-let person = new User('Ivan', 'Ivanov');
-console.log (person.fullName);
-
-
-
-
-
-
-/*
 
 //Task 1
 
@@ -64,24 +42,20 @@ function setNewcat() {
    
 const pet = document.querySelector(`#pet`).value;
 console.log(pet);
-const owner = document.querySelector(`#name1`).value;
+const owner = document.querySelector(`#name`).value;
 console.log(owner);
-const tel = document.querySelector(`#tel1`).value;
-const email = document.querySelector(`#email1`).value;
+const tel = document.querySelector(`#tel`).value;
+const email = document.querySelector(`#email`).value;
 const breed = document.querySelector(`#breed`).value;
 console.log(breed);
-const meal = document.querySelector(`.feed`).checked.value;
-console.log(meal);
-const sex = document.querySelector(`.sex.checked`);
-console.log(sex);
 
 
-
-
-let inputs = [];
-
-
-
+//const meal = document.querySelector(`.feed`).checked;
+//console.log(meal);
+//const sex = document.querySelector(`.sex`).checked;
+//console.log(sex);
+const comments = document.querySelector(`#comments`).value;
+console.log(comments);
 }
 
 document.querySelector('#form1').addEventListener(`submit`, (evt) =>{
@@ -94,10 +68,7 @@ document.querySelector('#form1').addEventListener(`submit`, (evt) =>{
 //Task 3
 
 class Calc  {
-       constructor(a,b){
-           this.a = a;
-           this.b = b;
-       }
+       
     static sum(a,b){
         return a + b;
     }
@@ -114,19 +85,48 @@ class Calc  {
     }
 }
 
-console.log(Calc.sum(5,10));
-console.log(Calc.minus(5,10));
-console.log(Calc.multiply(5,10));
-console.log(Calc.divide(5,10));
+
+let num1 = document.querySelector(`#num1`);
+
+let num2 = document.querySelector(`#num2`);
+
+let result = document.querySelector(`#results`);
+let button1= document.querySelector(`#plus`);
+let button2= document.querySelector(`#min`);
+let button3= document.querySelector(`#mult`);
+let button4= document.querySelector(`#div`);
 
 
+button1.addEventListener(`click`, function(){
+    
+     result.value = Calc.sum(+num1.value, +num2.value);
+     
+})
 
-let sev = new Calc (2,4);
-console.log(Calc.sum(2,4));
+button2.addEventListener(`click`,function(){
+
+    result.value = Calc.minus(num1.value, num2.value);
+    
+})
+
+button3.addEventListener(`click`,function(){
+
+    let c = Calc.multiply(num1.value, num2.value);
+    result.value = c;
+})
+
+button4.addEventListener(`click`,function(){
+
+    if (num2.value == 0){
+        alert(`You can't divide by 0 ! Try another number!`)
+        return;
+    }
+
+    result.value = Calc.divide(num1.value, num2.value);
+    
+})
 
 
-
-*/
 
 
 
