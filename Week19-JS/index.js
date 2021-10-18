@@ -26,36 +26,50 @@ console.log(worker.getSalary());
 //Task2
 
 class Cat {
-    constructor( nickName, ownerName, ownerPhone, ownerEmail, breed, feed, sex){
+    constructor( nickName, ownerName, ownerPhone, ownerEmail, breed, food, sex, comments){
         this.nickName = nickName;
         this.ownerName = ownerName;
         this.onerPhone = ownerPhone;
         this.ownerEmail = ownerEmail;
         this.breed = breed;
-        this.feed = feed;
+        this.food = food;
         this.sex = sex;
+        this.comments = comments;
     }
 }
 
 
+
 function setNewcat() {
-   
-const pet = document.querySelector(`#pet`).value;
-console.log(pet);
-const owner = document.querySelector(`#name`).value;
-console.log(owner);
-const tel = document.querySelector(`#tel`).value;
-const email = document.querySelector(`#email`).value;
-const breed = document.querySelector(`#breed`).value;
-console.log(breed);
+    const nickName = document.querySelector(`#pet`).value;
 
+    const ownerName = document.querySelector(`#name`).value;
+    
+    const ownerPhone = document.querySelector(`#tel`).value;
+    const ownerEmail = document.querySelector(`#email`).value;
+    const breed = document.querySelector(`#breed`).value;
+    
+    
+    const food =[];
+    const meal = document.querySelectorAll(`input[type="checkbox"]:checked`);
+       for (let i=0; i< meal.length; i++){
+           food.push(meal[i].value)
+       }
+    
+    const sex = document.querySelector(`input[name="sex"]:checked`).value;
+    const comments = document.querySelector(`#comments`).value;
+    
 
-//const meal = document.querySelector(`.feed`).checked;
-//console.log(meal);
-//const sex = document.querySelector(`.sex`).checked;
-//console.log(sex);
-const comments = document.querySelector(`#comments`).value;
-console.log(comments);
+    let cat = new Cat(nickName, ownerName, ownerPhone, ownerEmail, breed, food, sex, comments);
+
+    console.log(`Кличка питомца: `+ cat.nickName );
+    console.log(`Имя владельца:` + cat.ownerName);
+    console.log(`Номер телефона:`+ cat.ownerPhone );
+    console.log(`Электронная почта:` + cat.ownerEmail );
+    console.log(`Порода:` + cat.breed);
+    console.log(`Чем питается:` + cat.food);
+    console.log(`Пол:` + cat.sex);
+    console.log(`Комментарии:` + cat.comments);
 }
 
 document.querySelector('#form1').addEventListener(`submit`, (evt) =>{
