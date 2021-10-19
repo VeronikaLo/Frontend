@@ -39,7 +39,6 @@ class Cat {
 }
 
 
-
 function setNewcat() {
     const nickName = document.querySelector(`#pet`).value;
 
@@ -139,6 +138,57 @@ button4.addEventListener(`click`,function(){
     result.value = Calc.divide(num1.value, num2.value);
     
 })
+
+
+// task 4
+
+class ValidatorStatic{
+
+    static isEmail(str){
+        let emailFormat = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+        if (email.value.match(emailFormat)){
+            return true;
+        }
+        else{ 
+            alert(`Please, enter your user email correctly `);
+            return false;
+        }
+    }
+
+    static isDomain(str){
+        let domainFormat = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
+        if (domain.value.match(domainFormat)){
+            return true;
+        }
+        else{ 
+            return false;
+        }
+    }
+
+    static isDate(str){
+        let dateFormat = /^\d{2}\/\d{2}\/\d{4}$/;
+        if (date.value.match(dateFormat)){
+            return true;
+        }
+        else{ 
+            alert(`Please, enter the date correctly `);
+            return false;
+        }
+    }
+
+    static isPhone(str){
+        let phoneFormat =/^((\(?(00)?49\)?)?(-|\s)?((0|\(0\))?\s?[0-9]{3,4})((-|\s)?[0-9]{5,8})){1}$/;
+        if (phone.value.match(phoneFormat)){
+            return true;
+        }
+        else{ 
+            alert(`Please, enter your phone number correctly `);
+            return false;
+        }
+    }
+}
+
+
 
 
 
