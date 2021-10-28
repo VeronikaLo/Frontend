@@ -2,24 +2,21 @@ const api ={
     endpoint:"https://api.openweathermap.org/data/2.5/",
     key: "d7058a7cd0920a24a90816437e46ed30"
 }
-const input = document.querySelector(`#input`);
-input.addEventListener("keydown", enter);
 
+
+const input = document.querySelector(`#input`);
+input.addEventListener("keydown", enter); // Прослушка на input
+
+
+//Extra funktion, чтобы search начался только после Enter 
  function enter(e){
-    
-      if(e.keycode ==13){
-          search(input.value);
-      }  
+    if(e.keyCode ==13){
+        search(input.value);
+    }
       
 }
 
-// Test with prompt
-const data= prompt("enter your city");
-search(data);
-
-
-
-async function search(){
+async function search(data){
     const res = await fetch(`${api.endpoint}weather?q=${data}&units=metric&appID=${api.key}`);
     console.log(res);
     const result = await res.json();
@@ -32,24 +29,19 @@ async function search(){
     document.querySelector(`#variation`).innerHTML = `Min:${Math.round(result.main.temp_min)}<span>°</span>`+
     `Max:${Math.round(result.main.temp_max)}<span>°</span>`
 
+    input.value ='';
     getDatum();
 }
 
 function getDatum(){
     const now = new Date();
-    console.log(now);
     const days = ["Sunday","Monday", "Tuesday", "Wednesday","Thursday","Friday", "Saturday"];
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const myDay= days[now.getDay()];
-    console.log(myDay);
     const dayNum = now.getDate();
-    console.log(dayNum);
     const myMonth= months[now.getMonth()];
-    console.log(myMonth);
     const myYear = now.getFullYear();
-    console.log(myYear);
-
-    document.querySelector(`#date`).innerHTML = `${myDay}, ${dayNum} ${myMonth} ${myYear}`
-
+    
+    document.querySelector(`#date`).innerHTML = `${myDay}, ${dayNum} ${myMonth} ${myYear}`;
 }
 
