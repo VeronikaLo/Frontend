@@ -1,0 +1,33 @@
+body{
+    background-color: cadetblue;
+}
+
+.heading{
+    font-size:30px ;
+    text-align: center;
+}
+
+.card {
+    margin: 50px;
+    padding:20px;
+    background-color: bisque;
+}
+
+.card_title{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+span{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-item{
+    font-size: 18px;
+    margin: 2px 0 ;
+}
+
+.picture{
+    margin: 15px 0;
+}
