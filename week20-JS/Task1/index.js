@@ -5,10 +5,6 @@
 // get the data into localStorage
 
 
-
-
-
-
 // create massive with data
 let heroes = [
     {
