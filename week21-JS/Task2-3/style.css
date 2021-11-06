@@ -1,0 +1,45 @@
+
+body{
+    background-color: rgb(222, 237, 252);
+}
+
+.inputheight{
+    height: 30px;
+}
+
+.btn{
+    width: 150px;
+    height: 60px;
+    background-color: deeppink;
+    border:none;
+    border-radius: 20px;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    margin:10px 0;
+}
+
+input:required:valid{
+    border-color: rgb(40, 228, 40);
+}
+
+/*Task2*/
+
+.input{
+    height: 30px;
+}
+
+#errorForm{
+    width: 400px;
+    font-size: 14px;
+    color:deeppink;
+    margin:20px 0;
+}
+
+#welcome{
+    width: 400px;
+    font-size: 20px;
+    color:rgb(7, 173, 82);
+    
+}
+
