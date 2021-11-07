@@ -41,7 +41,7 @@ button1.onclick = function (event){
 } 
 
 //Task3
-
+/*
 let formCat = document.querySelector(`#formCat`);
 formCat.onsubmit =  function (event){
     event.preventDefault();
@@ -54,12 +54,16 @@ formCat.onsubmit =  function (event){
         }
     )
     .then(response => response.json())
-    .then(form => {console.log(form);})
+    .then(formCat => {console.log(formCat);})
     .catch(error => console.log(error));
 
 } 
 
-/*
+*/
+
+//Пробую новый синтаксис
+
+
  let formCat = document.querySelector(`#formCat`);
 formCat.onsubmit = async (e) =>{
     e.preventDefault();
@@ -75,8 +79,10 @@ formCat.onsubmit = async (e) =>{
     let result = await response.json();
     console.log(result); 
 }
+
     catch(error){
         console.log(error);
     }
+
 }
-*/
+

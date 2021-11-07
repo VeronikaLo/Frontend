@@ -34,7 +34,7 @@
       <br />
       <label for="telephone"
         >Telephone<br />
-        <input class="input" type="tel" id="telephone" />
+        <input class="input" type="tel" id="tel" />
       </label>
       <br />
       <label for="password"
@@ -93,8 +93,8 @@
           <label for="tel1">Номер телефона </label>
           <input
             type="tel"
-            name="tel"
-            id="tel"
+            name="tel1"
+            id="tel1"
             class="inputheight"
             placeholder="Телефон"
             required
@@ -105,7 +105,7 @@
           <label for="email1">Электронная почта</label>
           <input
             type="email"
-            name="email"
+            name="email1"
             id="email1"
             class="inputheight"
             placeholder="Email"
@@ -121,19 +121,21 @@
         <label for="breed">Порода питомца</label>        
         <select name="breed" id="breed" class="inputheight">
                     
-          <option value="1">Абиссинская кошка</option>
+          <option value="Абиссинская кошка">Абиссинская кошка</option>
                     
-          <option value="2">Бенгальская кошка</option>
+          <option value="Бенгальская кошка">Бенгальская кошка</option>
                     
-          <option value="3">Британская короткошерстная</option>
+          <option value="Британская короткошерстная">
+            Британская короткошерстная
+          </option>
                     
-          <option value="4">Корниш-рекс</option>
+          <option value="Корниш-рекс">Корниш-рекс</option>
                     
-          <option value="5">Мейн-ку́н</option>
+          <option value="Мейн-ку́н">Мейн-ку́н</option>
                     
-          <option value="6">Нибелунг</option>
+          <option value="Нибелунг">Нибелунг</option>
                     
-          <option value="7">Ориентальная кошка</option>
+          <option value="Ориентальная кошка">Ориентальная кошка</option>
                   
         </select>
               
@@ -146,15 +148,30 @@
 
         <br />
         <label for="dry">
-          <input type="checkbox" name="dry" id="dry" />сухой корм </label
+          <input
+            type="checkbox"
+            name="dry"
+            id="dry"
+            value="сухой корм"
+          />сухой корм </label
         >       
         <br />
         <label for="moist">
-          <input type="checkbox" name="moist" id="moist" />влажный корм
+          <input
+            type="checkbox"
+            name="moist"
+            id="moist"
+            value="влажный корм"
+          />влажный корм
         </label>
                 <br />
         <label for="natural">
-          <input type="checkbox" name="natural" id="natural" />натуральный корм
+          <input
+            type="checkbox"
+            name="natural"
+            id="natural"
+            value="натуральный корм"
+          />натуральный корм
         </label>
               
       </div>
@@ -164,12 +181,12 @@
         Укажите пол Вашего питомца:
         <br />
         <label for="male"
-          >  <input type="radio" name="sex" id="male" />Самец
+          >  <input type="radio" name="sex" id="male" value="Самец" />Самец
         </label>
         <br />
 
         <label for="female"
-          >  <input type="radio" name="sex" id="female" />Самка
+          >  <input type="radio" name="sex" id="female" value="Самка" />Самка
         </label>
               
       </div>
