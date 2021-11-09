@@ -30,17 +30,13 @@ button1.onclick = function (event){
     .then(user => {console.log(user);})
     .catch(error => console.log(error));
 
-
-    document.querySelector(`#name`).value ="";
-    document.querySelector(`#surname`).value="";
-    document.querySelector(`#username`).value="";
-    document.querySelector(`#email`).value="";
-    document.querySelector(`#tel`).value="";
-    document.querySelector(`#password`).value="";
+    document.querySelector(`#registration`).reset();
     document.querySelector(`#welcome`).innerText = `You're registered! Congrats!`;
 } 
 
 //Task3
+
+
 /*
 let formCat = document.querySelector(`#formCat`);
 formCat.onsubmit =  function (event){
@@ -67,6 +63,8 @@ formCat.onsubmit =  function (event){
  let formCat = document.querySelector(`#formCat`);
 formCat.onsubmit = async (e) =>{
     e.preventDefault();
+
+    document.querySelector(`#welcome`).innerText = ``;
     
     try {
     let response = await fetch ("https://httpbin.org/post",
@@ -84,5 +82,7 @@ formCat.onsubmit = async (e) =>{
         console.log(error);
     }
 
+    document.querySelector(`#formCat`).reset();
+    document.querySelector(`#saved`).innerText = `Спасибо, ваши данные были успешно сохранены!`;
 }
 
