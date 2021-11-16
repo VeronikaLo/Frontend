@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2>Task 1</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data" id="formCat">
+      <h2>Task 3</h2>
+      <h2>Расскажите нам о Вашем питомце</h2>
+
+            
+      <div>
+        <label for="pet">Кличка питомца</label>
+        <input
+          class="inputheight"
+          type="text"
+          name="pet"
+          id="pet"
+          placeholder="Кличка питомца"
+          required
+        />*     
+      </div>
+
+      <br />
+
+            
+      <fieldset>
+                
+        <legend>Владелец/ Владелица:</legend>
+                
+        <div>
+          <label for="name1">Имя владельца</label>
+           <input
+            class="inputheight"
+            type="text"
+            name="name"
+            id="name1"
+            placeholder="Ваши имя и фамилия"
+            required
+          />*         
+        </div>
+                
+        <div>
+          <label for="tel1">Номер телефона </label>
+          <input
+            type="tel"
+            name="tel1"
+            id="tel1"
+            class="inputheight"
+            placeholder="Телефон"
+            required
+          />*         
+        </div>
+                
+        <div>
+          <label for="email1">Электронная почта</label>
+          <input
+            type="email"
+            name="email1"
+            id="email1"
+            class="inputheight"
+            placeholder="Email"
+            required
+          />*         
+        </div>
+              
+      </fieldset>
+
+      <br />
+            
+      <div>
+        <label for="breed">Порода питомца</label>        
+        <select name="breed" id="breed" class="inputheight">
+                    
+          <option value="Абиссинская кошка">Абиссинская кошка</option>
+                    
+          <option value="Бенгальская кошка">Бенгальская кошка</option>
+                    
+          <option value="Британская короткошерстная">
+            Британская короткошерстная
+          </option>
+                    
+          <option value="Корниш-рекс">Корниш-рекс</option>
+                    
+          <option value="Мейн-ку́н">Мейн-ку́н</option>
+                    
+          <option value="Нибелунг">Нибелунг</option>
+                    
+          <option value="Ориентальная кошка">Ориентальная кошка</option>
+                  
+        </select>
+              
+      </div>
+            
+      <br />
+            
+      <div>
+        Чем питается Ваш питомeц (можно выбрать несколько вариантов):
+
+        <br />
+        <label for="dry">
+          <input
+            type="checkbox"
+            name="dry"
+            id="dry"
+            value="сухой корм"
+          />сухой корм </label
+        >       
+        <br />
+        <label for="moist">
+          <input
+            type="checkbox"
+            name="moist"
+            id="moist"
+            value="влажный корм"
+          />влажный корм
+        </label>
+                <br />
+        <label for="natural">
+          <input
+            type="checkbox"
+            name="natural"
+            id="natural"
+            value="натуральный корм"
+          />натуральный корм
+        </label>
+              
+      </div>
+      <br />
+            
+      <div>
+        Укажите пол Вашего питомца:
+        <br />
+        <label for="male"
+          >  <input type="radio" name="sex" id="male" value="Самец" />Самец
+        </label>
+        <br />
+
+        <label for="female"
+          >  <input type="radio" name="sex" id="female" value="Самка" />Самка
+        </label>
+              
+      </div>
+
+      <br />
+            
+      <div>
+        <label for="comments">Ваши комментарии:</label>
+        <br />
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+              
+      </div>
+
+      <br />
+            
+      <div>
+        <label for="photo">Фото Вашего питомца</label>
+        <input type="file" name="photo" id="photo" />     
+      </div>
+      <br />  
+      <div id="saved"></div>
+          
+      <div>
+        <button class="btn" id="button_one" type="submit">Сохранить</button>
+      </div>
+          
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
