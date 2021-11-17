@@ -4,7 +4,7 @@
 formCat.onsubmit = async (e) =>{
     e.preventDefault();
 
-    document.querySelector(`#welcome`).innerText = ``;
+    document.querySelector(`#saved`).innerText = ``;
     
     try {
     let response = await fetch ("https://httpbin.org/post",
