@@ -9,7 +9,7 @@
   "author": "VL",
   "license": "ISC",
   "dependencies": {
-    "chartjs": "^0.3.24",
+    "chart.js": "^3.6.0",
     "moment": "^2.29.1"
   }
 }
