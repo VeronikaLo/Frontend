@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding:0;
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    background-color: #3b8d99;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size:30px;
+}
+
+.header{
+    text-align: center;
+
+}
+
+.list_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul{
+    text-align: center;
+    text-shadow: 3px 3px black;   
+}
+
+.li{
+    list-style: none;
+        
+}
+
+.li:hover{
+    color: rgb(226, 226, 79);
+    cursor: pointer;
+}
+
+span{
+    font-size: 40px;
+}
+
+.pictures{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
