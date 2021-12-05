@@ -1,3 +1,7 @@
+
+const userName = localStorage.getItem(`username`);
+const greeting = document.querySelector(`#greeting`).innerHTML = "Поздравляю тебя, Войн " + userName +"! Ты добрался до следующего этапа.";
+
 const timerTime = 5;
 let amount = timerTime *60;
 
@@ -124,6 +128,7 @@ function check(){
 
 function endGame() {
     message.innerHTML = "СТОП  ИГРА !!!! Твоё время истекло. Количество отгаданных героев: " + score +". Твои знания просто поражают."+"<br>" + "Хочешь сыграть ещё? Нажми кнопку под этим сообщением.  Если горишь желанием узнать, что я еще приготовил для тебя - следуй за стрелой внизу...";
+    localStorage.setItem(`score`, score);
     play=false;
     timerOn = false;
     guess.classList.add(`hidden`);
